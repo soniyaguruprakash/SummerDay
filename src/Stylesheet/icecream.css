@@ -1,0 +1,49 @@
+.contain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image: url('../Assets/icecream/bgg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+    
+}
+.items{
+    width: 70%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+    
+}
+.items .card{
+    margin: 20px;
+    box-shadow: 10px 20px 3px rgba(123, 134, 233, 0.432);
+   
+}
+.items .card:hover{
+    transform: scale(1.1);
+}
+.cart{
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+    
+}
+
+@media (max-width:870px){
+    .contain{
+        flex-direction: column;
+    }
+    .cart{
+        width: 100%;
+        margin: 20px;
+    }
+    .items{
+        width: 100%;
+        
+    }
+}
